@@ -1,5 +1,13 @@
+import NumberSelector from "./NumberSelector";
+import TotalScore from "./totalScore";
+
 const GamePlay = () => {
-    <div>Game Play</div>
+    return (
+        <main>
+            <TotalScore/>
+            <NumberSelector/>
+        </main>
+    )
 };
 
 export default GamePlay;

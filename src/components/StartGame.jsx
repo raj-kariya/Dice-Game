@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-const StartGame = () => {
+const StartGame = ({toggle}) => {
     return (
         <Container>
             <div>
@@ -7,7 +7,7 @@ const StartGame = () => {
             </div>
             <div className='content'>
                 <h1>Dice Game</h1>
-                <Button>Play Now</Button>
+                <Button onClick={toggle}>Play Now</Button>
             </div>
         </Container>
     )
@@ -40,6 +40,7 @@ const Button = styled.button`
     font-size:16px;
     border: 1px solid transparent;
     cursor:pointer;
+    transition: 0.4s background ease-in;
     &:hover{
         background-color: white;
         border: 1px solid black;
